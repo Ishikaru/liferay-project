@@ -30,5 +30,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/rui.ishikawa/Downloads/jstl-api-1.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/rui.ishikawa/Downloads/jstl-impl-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/liferay-portal-6.2-ce-ga6/tomcat-7.0.62/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

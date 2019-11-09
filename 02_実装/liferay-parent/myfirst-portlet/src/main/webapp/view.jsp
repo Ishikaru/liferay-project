@@ -7,16 +7,21 @@
 <portlet:defineObjects />
 
 
-<liferay-theme:defineObjects />Hello, <%= user.getScreenName() %>!<br>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<liferay-theme:defineObjects />Hello, <%= user.getScreenName() %>!<br>
 
+	<h1>どこつぶへようこそ</h1>
+	<form action="/myfirst-portlet/LoginServlet" method="post">
+	ユーザ名：<input type="text" name="name"><br>
+	パスワード：<input type="password" name="pass"><br>
+	<input type="submit" value="ログイン">
+	</form>
 
-<portlet:actionURL name="testActionURL" var="updateURL"></portlet:actionURL>
-
-<h1>BBB</h1>
-<aui:form action="${updateURL}" method="post">
-	<aui:input name="protector_user_id" value="test" required="true"></aui:input>
-	<br/>
-	<aui:button type="submit" value="submit"></aui:button>
-</aui:form>
-<a href="http://localhost:8080/web/guest/sample.html">Test</a>
-
+</body>
+</html>
